@@ -1,0 +1,4 @@
+com.zyf.fwms.commonlibrary.databinding.FragmentBaseBinding
+com.zyf.fwms.commonlibrary.databinding.CommonBackTitleBinding
+android.databinding.DataBindingComponent
+com.zyf.fwms.commonlibrary.databinding.ActivityBaseBinding

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/rl_zonghefei"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="@color/colorWhite"
+        android:padding="30px">
+
+        <TextView
+            android:id="@+id/txt_zong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="综合费用"
+            android:textColor="@color/color333333"
+            android:textSize="34px"/>
+
+        <ImageView
+            android:id="@+id/img_record_detail_tishi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10px"
+            android:layout_toRightOf="@+id/txt_zong"
+            android:src="@mipmap/tishi"/>
+
+        <TextView
+            android:id="@+id/txt_zongfeitong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="100.00元"
+            android:textColor="@color/public_orange"
+            android:textSize="30px"/>
+    </RelativeLayout>
+</layout>

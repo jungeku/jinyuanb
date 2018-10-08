@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginTop="50px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px">
+
+        <ImageView
+            android:id="@+id/img_add_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/checking_cancel"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:background="@drawable/shape_xieyii">
+        <RadioButton
+            android:id="@+id/rb_add_income"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:text="收入"
+            android:gravity="center"
+            android:button="@null"
+            android:background="@drawable/radiobutton_selector"
+            />
+            <RadioButton
+                android:id="@+id/rb_add_expand"
+                android:layout_width="120px"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:gravity="center"
+                android:text="支出"
+                android:checked="true"
+                android:background="@drawable/radiobutton_selector"/>
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账单金额"
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="20px"
+            android:textSize="40px"/>
+        <TextView
+            android:id="@+id/txt_account_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="40px"
+            android:text="0.00"
+            android:layout_marginTop="30px"
+            android:layout_marginRight="20px"/>
+
+    </RelativeLayout>
+
+    <com.example.xrecyclerview.XRecyclerView
+        android:id="@+id/gv_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"></com.example.xrecyclerview.XRecyclerView>
+</LinearLayout>
+</layout>

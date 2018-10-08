@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.sk.xjwd.view.SettingView
+            android:id="@+id/sv_shouquan"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_marginTop="20px"
+            app:setting_title="《授权服务协议》"
+            app:setting_value="" />
+
+        <include layout="@layout/layout_line_inner" />
+
+        <com.sk.xjwd.view.SettingView
+            android:id="@+id/sv_yinsi"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            app:setting_title="《隐私政策》"
+            app:setting_value="" />
+
+    </LinearLayout>
+</layout>

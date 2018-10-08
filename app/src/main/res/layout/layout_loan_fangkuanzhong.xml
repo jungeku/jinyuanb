@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:id="@+id/ll_fangkuanzhong"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/home_loan_result_head"
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:background="@mipmap/fangkuan_bg"
+        android:padding="30px"
+        >
+
+        <ImageView
+            android:id="@+id/img_loan_result_fangkuanzhong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20px"
+            android:src="@mipmap/loan_checking"/>
+
+        <TextView
+            android:layout_below="@+id/img_loan_result_fangkuanzhong"
+            android:id="@+id/txt_loan_result_fangkuanzhong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40px"
+            android:textColor="#ffffffff"
+            android:text="放款中"
+            android:textSize="36px"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:padding="20px"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_fangkuan_bank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="放款至6222****1234的银行卡"
+            android:textSize="40px"
+            android:textColor="#ff333333"/>
+        <TextView
+            android:id="@+id/txt_fangkuan_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="工作人员正在放款中，请耐心等待..."
+            android:textSize="30px"
+            android:layout_marginTop="16px"
+            android:textColor="#ffb3b3b3"/>
+    </LinearLayout>
+</LinearLayout>
+
+</layout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="button_blue">#51aff6</color>
+    <color name="buxiang">#30c588</color>
+    <color name="color333333">#333333</color>
+    <color name="color606666">#606666</color>
+    <color name="color666666">#666666</color>
+    <color name="color777777">#777777</color>
+    <color name="color888888">#888888</color>
+    <color name="color999999">#999999</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorWhite">#ffffffff</color>
+    <color name="color_99000000">#33000000</color>
+    <color name="examine">#FE960F</color>
+    <color name="pink">#FDEBE9</color>
+    <color name="public_blue">#55c3fe</color>
+    <color name="public_gb_color">#f5f5f5</color>
+    <color name="public_line_color">#e5e5e5</color>
+    <color name="public_orange">#ED3D25</color>
+    <color name="public_orange1">#404352</color>
+    <color name="public_red">#fa4c49</color>
+    <color name="search_bg">#fca63f</color>
+    <color name="searth_txt_hint">#d4d4d4</color>
+    <color name="seebarcolor">#FFB58E</color>
+    <color name="shallowWhite">#feeeda</color>
+    <color name="super_real_nav_bar">#404352</color>
+    <color name="super_real_nav_text">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <string name="app_name">封装</string>
+</resources>

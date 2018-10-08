@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sk.xjwd.minehome.activity.RecordDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ScrollView
+        android:layout_above="@+id/ll_dai_return_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/public_gb_color"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_record_detail_yuqi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:background="@color/examine">
+
+                <TextView
+                    android:id="@+id/txt_record_detail_yuqi_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:drawablePadding="10dp"
+                    android:textColor="#ffffffff"
+                    android:drawableLeft="@mipmap/information_hints"
+                    android:text="已逾期1天，请及时还款"/>
+            </LinearLayout>
+
+            <include
+                android:id="@+id/lay_record_step"
+                layout="@layout/layout_record_step"/>
+            <LinearLayout
+                android:id="@+id/ll_record_detail_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:background="@color/colorWhite"
+                android:layout_marginTop="20px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color999999"
+                    android:textSize="25px"
+                    android:layout_marginLeft="100px"
+                    android:text="我已还款，但状态未更新？"/>
+                <TextView
+                    android:id="@+id/txt_feedback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/public_orange"
+                    android:textSize="25px"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="100px"
+                    android:text="点击反馈还款问题"/>
+            </LinearLayout>
+
+            <!--借款信息-->
+                <include
+                    android:id="@+id/lay_loan_info"
+                    layout="@layout/layout_loan_info"/>
+            <!--综合费用-->
+                <include
+                    android:id="@+id/lay_sum_cost"
+                    layout="@layout/layout_zonghefei"/>
+            <!--还款信息-->
+                <include
+                    android:id="@+id/lay_huan_info"
+                    layout="@layout/layout_huan_info"/>
+                <include layout="@layout/layout_line"/>
+                <include
+                    android:id="@+id/lay_xieyi"
+                    layout="@layout/layout_xieyi_loan"/>
+
+
+           <!-- <LinearLayout
+                android:id="@+id/ll_dai_return_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:layout_marginTop="20px"
+                >
+
+            <LinearLayout
+                android:id="@+id/ll_dai_return"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="待还款金额(元)"
+                    android:textColor="#ffb3b3b3"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:id="@+id/txt_dai_return_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1,002.50"
+                    android:textColor="#ffed3d25"
+                    android:textSize="30sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_now_renwal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:layout_marginTop="20px"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btn_apply_xuqi"
+                    android:layout_width="0dp"
+                    android:layout_height="80px"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_code_border"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:textSize="34px"
+                    android:layout_margin="30px"
+                    android:textColor="@color/public_orange"
+                    android:text="申请续期"/>
+                <Button
+                    android:id="@+id/btn_fast_huan"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="80px"
+                    android:background="@drawable/shape_home_btn_border"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:textSize="34px"
+                    android:layout_margin="30px"
+                    android:textColor="@color/colorWhite"
+                    android:text="立即还款"/>
+            </LinearLayout>
+            </LinearLayout>-->
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_dai_return_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20px"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_dai_return"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="待还款金额(元)"
+                android:textColor="#ffb3b3b3"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/txt_dai_return_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1,002.50"
+                android:textColor="#ffed3d25"
+                android:textSize="30sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_now_renwal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="20px"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btn_apply_xuqi"
+                android:layout_width="0dp"
+                android:layout_height="80px"
+                android:layout_weight="1"
+                android:background="@drawable/shape_code_border"
+                style="?android:attr/borderlessButtonStyle"
+                android:textSize="34px"
+                android:layout_margin="30px"
+                android:textColor="@color/public_orange"
+                android:text="申请续期"/>
+            <Button
+                android:id="@+id/btn_fast_huan"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="80px"
+                android:background="@drawable/shape_home_btn_border"
+                style="?android:attr/borderlessButtonStyle"
+                android:textSize="34px"
+                android:layout_margin="30px"
+                android:textColor="@color/colorWhite"
+                android:text="立即还款"/>
+        </LinearLayout>
+    </LinearLayout>
+    </RelativeLayout>
+</layout>

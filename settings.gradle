@@ -1,0 +1,1 @@
+include ':app', 'commonlibrary', 'xrecyclerview', ':keyboardlib', ':android_shujumohe_sdk_beta_20180518_1.2.6', ':udidsafe-V4.0-2017_11_07', 'im7m'

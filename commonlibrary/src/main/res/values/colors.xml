@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+
+    <!--页面背景的颜色-->
+    <color name="public_gb_color">#f5f5f5</color>
+    <!--线条颜色-->
+    <color name="public_line_color">#e5e5e5</color>
+    <!--不向学生提供服务颜色-->
+    <color name="buxiang">#30c588</color>
+    <!--标题颜色-->
+    <color name="public_orange">#ED3D25</color>
+    <color name="public_orange1">#404352</color>
+    <!--白色-->
+    <color name="colorWhite">#ffffffff</color>
+    <!-- 浅白-->
+    <color name="shallowWhite">#feeeda</color>
+    <!--透明色-->
+    <color name="transparent">#00000000</color>
+    <!--黑色-->
+    <color name="black">#000000</color>
+    <!--透明度百分之33的黑色-->
+    <color name="color333333">#333333</color>
+    <!--透明度百分之66的黑色-->
+    <color name="color666666">#666666</color>
+    <!--透明度百分之77的黑色-->
+    <color name="color777777">#777777</color>
+    <!--透明度百分之88的黑色-->
+    <color name="color888888">#888888</color>
+    <!--透明度百分之66的黑色-->
+    <color name="color606666">#606666</color>
+    <!--透明度百分之99的黑色-->
+    <color name="color999999">#999999</color>
+    <!-- 公共蓝色-->
+    <color name="public_blue">#55c3fe</color>
+    <!-- 按钮蓝色-->
+    <color name="button_blue">#51aff6</color>
+    <!-- 搜索框背景-->
+    <color name="search_bg">#fca63f</color>
+    <!-- 搜索框背景-->
+    <color name="examine">#FE960F</color>
+
+
+    <!--红色-->
+    <color name="public_red">#fa4c49</color>
+    <!--搜索文字颜色-->
+    <color name="searth_txt_hint">#d4d4d4</color>
+    <color name="color_99000000">#33000000</color>
+
+    <!--进度条进度的颜色-->
+    <color name="seebarcolor">#FFB58E</color>
+
+    <color name="pink">#FDEBE9</color>
+
+
+    <!--有盾导航条背景颜色、导航条文字颜色-->
+    <color name="super_real_nav_bar">#404352</color> 导航条背景颜色
+    <color name="super_real_nav_text">#ffffff</color>导航条文字颜色
+   <!-- <color name="super_real_light">#51aff6</color>-->下一步按钮背景色
+</resources>

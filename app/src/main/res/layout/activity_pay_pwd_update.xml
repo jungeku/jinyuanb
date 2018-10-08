@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sk.xjwd.minehome.activity.PayPwdUpdateActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+        <include layout="@layout/layout_line"/>
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="27px"
+            android:textColor="@color/color333333"
+            android:layout_margin="40px"
+            android:text="输入旧交易密码"/>
+        <com.sk.xjwd.view.PasswordInputView
+            android:id="@+id/again_paypswd_pet"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:cursorVisible="false"
+            android:background="@color/transparent"
+            android:inputType="number"
+            android:maxLength="6"
+            app:pivBorderColor="#e5e5e5"
+            android:layout_marginLeft="100px"
+            android:layout_marginRight="100px"
+            app:pivBorderRadius="2dp"
+            app:pivBorderWidth="1px"
+            app:pivPasswordColor="@color/black"
+            app:pivPasswordLength="6"
+            app:pivPasswordWidth="2dp" />
+        <Button
+            android:id="@+id/btn_update_pay_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:background="@drawable/shape_home_btn_border"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="50px"
+            android:textSize="34px"
+            android:textColor="@color/colorWhite"
+            android:text="下一步"/>
+        <TextView
+            android:id="@+id/txt_forget_pay_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/public_orange"
+            android:textSize="30px"
+            android:layout_marginTop="30px"
+            android:text="忘记交易密码？"/>
+    </LinearLayout>
+</layout>

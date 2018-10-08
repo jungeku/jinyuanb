@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+  <RelativeLayout
+      android:id="@+id/rl_title_bar"
+      android:background="@color/colorWhite"
+      android:layout_width="match_parent"
+      android:layout_height="90px">
+    <LinearLayout
+        android:id="@+id/ll_lift_back"
+        android:layout_width="96px"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+      <ImageView
+
+          android:id="@+id/iv_icon_back"
+          android:layout_marginLeft="27px"
+          android:layout_marginRight="27px"
+          android:layout_gravity="center"
+          android:src="@mipmap/fanhuijiantou"
+          android:scaleType="fitXY"
+          android:layout_width="42px"
+          android:layout_height="42px" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_title"
+        android:textSize="33px"
+        android:textColor="@color/black"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="200px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+    <RelativeLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone"
+        android:id="@+id/rl_search"
+        android:background="@drawable/shape_searth_border"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/ll_lift_back"
+        android:layout_toLeftOf="@+id/ll_right_text"
+        android:layout_marginLeft="20px"
+        android:layout_width="wrap_content"
+        android:layout_height="58px">
+        <EditText
+            android:textSize="28px"
+            android:background="@null"
+            android:id="@+id/et_search"
+            android:maxLines="1"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+      <LinearLayout
+          android:id="@+id/ll_et_label"
+          android:gravity="center"
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+        <ImageView
+            android:scaleType="fitXY"
+            android:src="@mipmap/seach_baise"
+            android:layout_width="30px"
+            android:layout_marginRight="10px"
+            android:layout_height="30px" />
+        <TextView
+            android:textSize="28px"
+            android:textColor="@color/searth_txt_hint"
+            android:text="请输入关键字搜索"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+      </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_alignParentRight="true"
+        android:id="@+id/ll_right_img"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+      <ImageView
+          android:layout_centerVertical="true"
+          android:id="@+id/iv_right_img"
+          android:layout_marginLeft="20px"
+          android:layout_marginRight="20px"
+          android:layout_gravity="center_vertical"
+          android:layout_width="40px"
+          android:layout_height="40px" />
+      <TextView
+          android:visibility="gone"
+          android:id="@+id/tv_unRead"
+          android:background="@drawable/shap_circle"
+          android:textColor="@color/public_orange"
+          android:layout_marginTop="12px"
+          android:layout_marginLeft="50px"
+          android:text="3"
+          android:textSize="18px"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_right_text"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+      <TextView
+          android:id="@+id/tv_right_text"
+          android:textSize="26px"
+          android:textColor="@color/public_red"
+          android:gravity="center"
+          android:paddingLeft="20px"
+          android:paddingRight="20px"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent" />
+    </LinearLayout>
+  </RelativeLayout>
+
+</layout>
+

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="android_shujumohe_sdk_beta_20180518_1.2.6:@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android_shujumohe_sdk_beta_20180518_1.2.6.aar/e78a29a7b17c9804bfa9bfdba5e95e37/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android_shujumohe_sdk_beta_20180518_1.2.6.aar/e78a29a7b17c9804bfa9bfdba5e95e37/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android_shujumohe_sdk_beta_20180518_1.2.6.aar/e78a29a7b17c9804bfa9bfdba5e95e37/jars/libs/tbs_20180211_105126.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

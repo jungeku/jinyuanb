@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.rongke.jmbk.activity.RentConfirmCodeActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+<TextView
+    android:layout_marginTop="30px"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/color333333"
+    android:text="请输入验证码："
+    android:textSize="30px"/>
+    <com.sk.xjwd.view.PasswordInputView
+        android:id="@+id/ed_rentCode"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:cursorVisible="true"
+        android:background="@color/public_orange"
+        android:inputType="number"
+        android:maxLength="6"
+        app:pivBorderColor="#e5e5e5"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"
+        app:pivBorderRadius="2dp"
+        app:pivBorderWidth="1px"
+        app:pivPasswordColor="@color/black"
+        app:pivPasswordLength="6"
+        android:textSize="28px"
+     />
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="@drawable/shape_home_btn_border"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"
+        android:layout_marginTop="50px"
+        android:textSize="34px"
+        android:textColor="@color/colorWhite"
+        android:text="提 交"/>
+
+</LinearLayout>
+
+</layout>

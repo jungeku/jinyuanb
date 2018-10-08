@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="com.pingxx:pingpp-alipay-2.1.18">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/pingpp-alipay-2.1.18.aar/1f6107ef491c75c9bea04d3219d8686f/jars/libs/alipaySdk-20180316.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/pingpp-alipay-2.1.18.aar/1f6107ef491c75c9bea04d3219d8686f/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/pingpp-alipay-2.1.18.aar/1f6107ef491c75c9bea04d3219d8686f/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.pingxx/pingpp-alipay/2.1.18/f445584893daa2d7b1affaad815edefc36e01c8f/pingpp-alipay-2.1.18-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

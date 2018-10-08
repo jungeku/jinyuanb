@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sk.xjwd.mainhome.activity.CouponActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.example.xrecyclerview.XRecyclerView
+            android:id="@+id/xRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.example.xrecyclerview.XRecyclerView>
+
+        <LinearLayout
+            android:id="@+id/ll_coupon_null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/coupon_null"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂无优惠券"
+                android:textColor="#ffb3b3b3"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+</layout>

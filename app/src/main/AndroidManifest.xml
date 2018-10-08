@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sk.xjwd">
+
+    <!-- Required -->
+    <permission
+        android:name="com.sk.xjwd.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.rongke.xinjiesudaiiii.permission.JPUSH_MESSAGE"/>
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG"/>
+    <uses-permission android:name="android.permission.INSTALL_DRM"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_MMS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_STATS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 两种provider的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 仅网络定位的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- Folder Permissions in SDCard -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+
+
+
+    <application
+        android:name="com.sk.xjwd.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/android_template"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 主页 -->
+        <activity android:name=".mainhome.activity.SplashActivity">
+        <!--<activity android:name=".mainhome.activity.HorselectedActivity">-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="rongyi"/>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.moor.imkf.tcpservice.service.IMService"
+            >
+        </service>
+
+        <receiver
+            android:name="com.moor.imkf.receiver.NetWorkReceiver"
+            >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name="com.sk.xjwd.account.activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan|stateHidden|stateAlwaysHidden">
+        </activity>
+        <activity
+            android:name="com.sk.xjwd.mainhome.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:configChanges="orientation|keyboardHidden"
+            >
+
+        </activity>
+        <!-- 注册 -->
+        <activity
+            android:name="com.sk.xjwd.account.activity.RegisterActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden|stateAlwaysHidden">
+        </activity>
+        <!-- 忘记密码 -->
+        <activity
+            android:name="com.sk.xjwd.account.activity.ForgetPwdActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden|stateAlwaysHidden">
+        </activity>
+        <!-- 消息中心 -->
+        <activity android:name="com.sk.xjwd.mainhome.activity.MessageActivity">
+        </activity>
+        <!-- 修改密码 -->
+        <activity android:name=".minehome.activity.UpdatePasswordActivity">
+        </activity>
+        <!-- 账户信息 -->
+        <activity android:name=".minehome.activity.MineInfoActivity">
+        </activity>
+        <!-- 借款记录 -->
+        <activity android:name="com.sk.xjwd.minehome.activity.LoanRecordActivity">
+        </activity>
+        <!-- 优惠券 -->
+        <activity android:name="com.sk.xjwd.mainhome.activity.CouponActivity">
+        </activity>
+        <!-- 邀请好友 -->
+        <activity android:name="com.sk.xjwd.minehome.activity.InviteFriendsActivity">
+        </activity>
+        <!-- 设置支付密码 -->
+        <activity
+            android:name="com.sk.xjwd.minehome.activity.PayPwdActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden|stateAlwaysHidden">
+        </activity>
+        <!-- 确认支付密码 -->
+        <activity
+            android:name="com.sk.xjwd.minehome.activity.PayOkPwdActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden|stateAlwaysHidden">
+        </activity>
+        <!-- 银行卡认证 -->
+        <activity
+            android:name="com.sk.xjwd.authenhome.activity.BankCardAuthActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden|stateAlwaysHidden">
+        </activity>
+        <!-- 认证界面 -->
+        <activity
+            android:name="com.sk.xjwd.authenhome.activity.ApplyActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden|stateAlwaysHidden">
+        </activity>
+        <!-- 手机认证 -->
+        <activity
+            android:name="com.sk.xjwd.authenhome.activity.PhoneAuthActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden|stateAlwaysHidden">
+        </activity>
+        <!-- 基本信息 -->
+        <activity
+            android:name="com.sk.xjwd.authenhome.activity.BaseInfoActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden|stateAlwaysHidden"
+            android:exported="true" >
+        </activity>
+        <!-- 芝麻认证 -->
+        <activity android:name="com.sk.xjwd.authenhome.activity.ZhimaActivity">
+        </activity>
+        <!-- 身份认证 -->
+        <activity
+            android:name="com.sk.xjwd.authenhome.activity.IDAuthActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden|stateAlwaysHidden">
+
+        </activity>
+        <!-- 社保/公积金认证 -->
+        <activity
+            android:name="com.sk.xjwd.authenhome.activity.SheBaoAuthActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden|stateAlwaysHidden">
+        </activity>
+        <!-- 银行卡管理 -->
+        <activity
+            android:name="com.sk.xjwd.minehome.activity.UpdateBankActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden|stateAlwaysHidden">
+        </activity>
+        <!-- 帮助中心 -->
+        <activity android:name="com.sk.xjwd.minehome.activity.HelpCenterActivity">
+        </activity>
+        <!-- 关于我们 -->
+        <activity android:name="com.sk.xjwd.minehome.activity.AboutActivity">
+        </activity>
+        <!-- 意见反馈 -->
+        <activity
+            android:name="com.sk.xjwd.minehome.activity.FeedbackActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden|stateAlwaysHidden">
+        </activity>
+        <!-- 关于小额贷 -->
+        <activity android:name="com.sk.xjwd.minehome.activity.AboutUsActivity">
+        </activity>
+        <!-- 借款 -->
+        <activity
+            android:name="com.sk.xjwd.mainhome.activity.LoanDetailActivity"
+            android:launchMode="singleTask">
+        </activity>
+
+        <!--借款界面-->
+        <activity android:name=".mainhome.activity.LoanActivity"></activity>
+        <!--借款审核界面-->
+        <activity android:name=".mainhome.activity.LoanResultActivity"></activity>
+        <!-- 借款详情 -->
+        <activity android:name="com.sk.xjwd.minehome.activity.RecordDetailActivity">
+        </activity>
+        <!-- 续期 -->
+        <activity android:name="com.sk.xjwd.minehome.activity.RenewalActivity">
+        </activity>
+        <!-- 续期还款 -->
+        <activity android:name="com.sk.xjwd.minehome.activity.RenewalDebitActivity">
+        </activity>
+        <!-- 续期还款结果 -->
+        <activity android:name=".minehome.activity.ApplyorhuanActivity">
+        </activity>
+        <!-- 还款成功 -->
+        <activity android:name="com.sk.xjwd.minehome.activity.RepaySuccessActivity">
+        </activity>
+        <!-- 帮助中心详情 -->
+        <activity android:name="com.sk.xjwd.minehome.activity.HelpDetailActivity">
+        </activity>
+        <!-- 网页界面 -->
+        <activity android:name=".minehome.activity.WebviewActivity">
+
+        </activity>
+        <activity android:name=".minehome.activity.RentConfirmCodeActivity"></activity>
+        <!-- 支付密码修改 -->
+        <activity
+            android:name="com.sk.xjwd.minehome.activity.PayPwdUpdateActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden|stateAlwaysHidden">
+        </activity>
+        <!-- 支付密码忘记 -->
+        <activity
+            android:name="com.sk.xjwd.minehome.activity.CheckPhoneActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden|stateAlwaysHidden">
+        </activity>
+        <!-- 还款反馈 -->
+        <activity
+            android:name="com.sk.xjwd.minehome.activity.RepayFeedbackActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden|stateAlwaysHidden">
+        </activity>
+        <!-- 协议 -->
+        <activity android:name="com.sk.xjwd.minehome.activity.AgreementActivity">
+        </activity>
+        <activity android:name="com.sk.xjwd.mainhome.activity.TaoBsoActivity">
+        </activity>
+        <activity android:name=".checking.MainTabActivity">
+        </activity>
+        <activity android:name=".mainhome.activity.SpaceActivity">
+        </activity>
+        <activity android:name=".checking.activity.AddActivity">
+        </activity>
+        <activity android:name=".mainhome.activity.HorselectedActivity">
+        </activity>
+        <activity android:name=".checking.activity.PropertyFenxiActivity">
+        </activity>
+        <activity android:name=".minehome.activity.ServiceXIeyiActivity">
+        </activity>
+
+        <activity
+            android:name=".contact.chat.ChatActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity
+            android:name=".contact.chat.OfflineMessageActicity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity
+            android:name=".contact.chat.ScheduleOfflineMessageActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+
+        <activity
+            android:name=".contact.chat.ImageViewLookActivity"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity
+            android:name=".contact.MoorWebCenter"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.rongke.xinjiesudai"/>
+            </intent-filter>
+        </activity>
+
+        <!--自己定义消息接收的广播-->
+        <receiver
+            android:name=".contact.receiver.NewMsgReceiver"
+            android:enabled="true"
+            >
+            <intent-filter android:priority="2147483647">
+                <action android:name="com.sk.xjwd.contact.KEFU_NEW_MSG"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:exported="false"
+            android:process=":mult">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER"/>
+                <action android:name="cn.jpush.android.intent.REPORT"/>
+                <action android:name="cn.jpush.android.intent.PushService"/>
+                <action android:name="cn.jpush.android.intent.PUSH_TIME"/>
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService"/>
+
+                <category android:name="com.rongke.xinjiesudai"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false">
+        </service>
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"/> <!-- Required  显示通知栏 -->
+                <category android:name="com.rongke.xinjiesudai"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false"/>
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name="com.sk.xjwd.receiver.MyReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION"/> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.rongke.xinjiesudai"/>
+            </intent-filter>
+        </receiver>
+        <!--微信-->
+        <activity
+            android:name="com.sk.xjwd.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <!--微博-->
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.sk.xjwd.WBShareActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:launchMode="singleTask"
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name="com.sk.xjwd.minehome.activity.NewRenewalDebitActivity"></activity>
+        <!--qq-->
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="tencent100424468"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default"/>
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="010130c661e06a059012f0ea"/> <!-- </>值来自开发者平台取得的AppKey -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5915672d76661344010012ba">
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng">
+        </meta-data>
+
+        <!--支付宝-->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <!--<activity
+            android:name="com.pingplusplus.android.PaymentActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>-->
+    </application>
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <!--支付宝支付权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+</manifest>

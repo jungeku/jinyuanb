@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:lv="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:background="@drawable/shape_authen_border"
+                android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="60px"/>
+    <TextView
+        android:id="@+id/txt_authen_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color333333"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/img_icon"
+        android:layout_marginTop="30px"
+        android:layout_marginBottom="40px"
+        android:textSize="28px"
+        android:text="社保认证"/>
+    <com.sk.xjwd.view.LabelView
+        android:id="@+id/txt_authen_state"
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:layout_alignParentRight="true"
+        lv:lv_background_color="#e8e8e8"
+        lv:lv_fill_triangle="true"
+        lv:lv_gravity="TOP_RIGHT"
+        lv:lv_text="+20"
+        lv:lv_text_color="@color/color666666"
+        lv:lv_text_size="12sp"></com.sk.xjwd.view.LabelView>
+</RelativeLayout>

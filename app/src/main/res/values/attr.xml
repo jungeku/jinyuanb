@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 底部导航属性-->
+    <declare-styleable name="NavigationView">
+
+        <attr name="drawable_src" format="integer" /> <!--图片选择器-->
+        <attr name="dse_name" format="string" /> <!-- 描述-->
+        <attr name="is_select" format="boolean"/> <!--是否选中-->
+
+    </declare-styleable>
+
+    <!-- 设置横条-->
+    <declare-styleable name="SettingActionView">
+
+        <attr name="icon_src" format="reference|integer" /> <!--左侧图片-->
+        <attr name="title_name" format="string" /> <!-- 描述-->
+        <attr name="is_show_arrow" format="boolean"/> <!--是否显示箭头-->
+        <attr name="is_show_line" format="boolean"/> <!--是否显示底部线条-->
+    </declare-styleable>
+     <declare-styleable name="HorizontalselectedView">
+            <!--可见数目-->
+
+            <attr name="HorizontalselectedViewSeesize" format="integer"/>
+            <!--被选择文字的大小和颜色-->
+            <attr name="HorizontalselectedViewSelectedTextSize" format="float"/>
+            <attr name="HorizontalselectedViewSelectedTextColor" format="color|reference"/>
+            <!--未被被选择文字的大小和颜色-->
+            <attr name="HorizontalselectedViewTextSize" format="float"/>
+            <attr name="HorizontalselectedViewTextColor" format="color|reference"/>
+
+    </declare-styleable>
+    <!--主页认证-->
+    <declare-styleable name="SettingAuthenView">
+
+        <attr name="authen_src" format="integer" /> <!--中间图片-->
+        <attr name="authen_name" format="string" /> <!-- 描述-->
+        <attr name="title_color" format="color"/><!--中间文字颜色-->
+        <attr name="txt_top_color" format="color"/><!--右上角文字颜色-->
+        <attr name="txt_top_bg" format="color"/><!--右上角背景-->
+        <attr name="txt_top" format="string" /> <!-- 右上角文字-->
+    </declare-styleable>
+
+    <!-- 设置属性-->
+    <declare-styleable name="SettingView">
+
+        <attr name="setting_title" format="string" />
+        <attr name="setting_value" format="string" />
+        <attr name="arrow_is_show" format="boolean"/>
+
+    </declare-styleable>
+    <!--密码框-->
+    <declare-styleable name="PasswordInputView">
+        <attr name="pivBorderColor" format="color"/>
+        <attr name="pivBorderWidth" format="dimension"/>
+        <attr name="pivBorderRadius" format="dimension"/>
+        <attr name="pivPasswordColor" format="color"/>
+        <attr name="pivPasswordWidth" format="dimension"/>
+        <attr name="pivPasswordRadius" format="dimension"/>
+        <attr name="pivPasswordLength" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="LabelView">
+        <!-- 设置文字内容 -->
+        <attr name="lv_text" format="string"/>
+        <!-- 设置文字颜色,默认#ffffff -->
+        <attr name="lv_text_color" format="color"/>
+        <!-- 设置文字大小,默认11sp -->
+        <attr name="lv_text_size" format="dimension"/>
+        <!-- 设置文字是否支持加粗,默认true -->
+        <attr name="lv_text_bold" format="boolean"/>
+        <!-- 设置文字是否支持全部大写,默认true-->
+        <attr name="lv_text_all_caps" format="boolean"/>
+        <!-- 设置背景颜色,默认"#FF4081"-->
+        <attr name="lv_background_color" format="color"/>
+        <!-- 设置LabelView所在矩形最小宽高,默认mFillTriangle?35dp:50dp-->
+        <attr name="lv_min_size" format="dimension"/>
+        <!-- 设置文字上下padding,默认3.5dp,mFillTriangle为true时无效-->
+        <attr name="lv_padding" format="dimension"/>
+        <!-- 设置LabelView方向 -->
+        <attr name="lv_gravity" format="enum">
+            <enum name="TOP_LEFT" value="51"/>
+            <enum name="TOP_RIGHT" value="53"/>
+            <enum name="BOTTOM_LEFT" value="83"/>
+            <enum name="BOTTOM_RIGHT" value="85"/>
+        </attr>
+        <!-- 设置是否填充三角区域,默认false -->
+        <attr name="lv_fill_triangle" format="boolean"/>
+        <!-- 设置是否浮嵌显示大小 -->
+        <attr name="lv_fill_size" format="integer"/>
+    </declare-styleable>
+
+    <!--密码输入框-->
+    <declare-styleable name="PswText">
+        <!--密码长度-->
+        <attr name="pswLength" format="integer"/>
+        <!--密码框颜色-->
+        <attr name="borderColor" format="color"/>
+        <!--密码颜色-->
+        <attr name="pswColor" format="color"/>
+        <!--输入时密码框颜色-->
+        <attr name="inputBorder_color" format="color"/>
+        <!--输入时密码框阴影颜色-->
+        <attr name="borderShadow_color" format="color"/>
+        <!--明文密码文字大小-->
+        <attr name="psw_textSize" format="dimension"/>
+        <!--密码框圆角程度-->
+        <attr name="borderRadius" format="dimension"/>
+        <!--是否使用图片绘制密码框-->
+        <attr name="isDrawBorderImg" format="boolean"/>
+        <!--按back键时，是否需要绘制明文密码-->
+        <attr name="isShowTextPsw" format="boolean"/>
+        <!--输入密码时密码框是否有阴影-->
+        <attr name="isShowBorderShadow" format="boolean"/>
+        <!--密码框图片-->
+        <attr name="borderImg" format="reference"/>
+        <!--输入时变化的密码框图片-->
+        <attr name="inputBorderImg" format="reference"/>
+        <!--延迟绘制密码圆点的时间,1000 = 1s-->
+        <attr name="delayTime" format="integer"/>
+        <!--是否只绘制明文密码-->
+        <attr name="clearTextPsw" format="boolean"/>
+        <!--是否只绘制圆点-->
+        <attr name="darkPsw" format="boolean"/>
+    </declare-styleable>
+
+    <attr name="peakValue" format="dimension"/>
+    <attr name="waveColor" format="color" />
+    <attr name="speedOne" format="integer" />
+    <attr name="speedTwo" format="integer" />
+    <attr name="waveHeight" format="dimension" />
+
+    <declare-styleable name="DoubleWaveView">
+        <attr name="peakValue" />
+        <attr name="waveColor" />
+        <attr name="speedOne" />
+        <attr name="speedTwo" />
+        <attr name="waveHeight" />
+
+    </declare-styleable>
+
+</resources>

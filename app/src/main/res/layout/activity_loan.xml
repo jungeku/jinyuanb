@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false"
+        android:scrollbars="none">
+    <RelativeLayout
+        android:id="@+id/ll_loan_success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/home_loan_success_head"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:background="@mipmap/loan_bg"
+            android:padding="30px"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20px"
+                android:text="当前可借额度"
+                android:textColor="#ffffffff"
+                android:textSize="26px"/>
+
+            <TextView
+                android:id="@+id/txt_loan_totalmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40px"
+                android:textColor="#ffffffff"
+                android:text="1200"
+                android:textSize="72px"/>
+
+            <RelativeLayout
+                android:layout_centerHorizontal="true"
+                android:layout_margin="40px"
+                android:layout_below="@+id/txt_loan_totalmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txt_loan_allmoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="授权总额："
+                    android:textColor="#ffffffff"
+                    android:textSize="30px"/>
+
+                <TextView
+                    android:id="@+id/loan_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text="日利率:0.03%"
+                    android:textColor="#ffffffff"
+                    android:textSize="30px" />
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/home_loan_success_body"
+            android:layout_marginTop="350px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_border"
+            style="?android:attr/borderlessButtonStyle">
+
+            <TextView
+                android:id="@+id/txt_loan_loanmoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="借款金额"
+                android:textSize="26px"
+                android:layout_margin="30px"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_loan_loanmoney"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥"
+                    android:textColor="#ff333333"
+                    android:textSize="50px"/>
+                <TextView
+                    android:id="@+id/ed_loan_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="40px"
+                    android:text="1200"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/color666666"/>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_loan_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:layout_below="@+id/home_loan_success_body"
+            android:layout_margin="30px"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color666666"
+                    android:textSize="30px"
+                    android:text="续期期限"/>
+                <TextView
+                    android:id="@+id/txt_loan_limitPayTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color666666"
+                    android:layout_alignParentRight="true"
+                    android:textSize="30px"
+                    android:text="7天"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_loan_coupon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color666666"
+                    android:textSize="30px"
+                    android:text="优惠券"/>
+                <ImageView
+                    android:id="@+id/img_loan_coupon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/youjiantou"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_loan_cardnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:padding="10dp"
+            android:layout_below="@+id/ll_loan_body"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color666666"
+                android:textSize="30px"
+                android:text="到账账户"/>
+            <TextView
+                android:id="@+id/txt_loan_cardnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color666666"
+                android:layout_alignParentRight="true"
+                android:textSize="30px"
+                android:text=""/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_loan_hips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30px"
+            android:layout_below="@+id/rl_loan_cardnum"
+            android:singleLine="false"
+            android:textSize="30px"
+            android:text="点击“立即申请”即表示我同意签约《借款协议》《授权服务协议》《授权扣款委托书》"/>
+
+        <LinearLayout
+            android:layout_below="@+id/txt_loan_hips"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/ll_loan_apply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <Button
+                android:id="@+id/btn_loan_apply"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_home_btn_border"
+                style="?android:attr/borderlessButtonStyle"
+                android:textSize="30px"
+                android:textColor="@color/color_white"
+                android:layout_marginRight="20px"
+                android:text="立即申请"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_loan_apply"
+            android:layout_centerHorizontal="true"
+            android:text="以上金额位预估金额，实际金额以放款为准"
+            android:textColor="#ffb3b3b3"
+            android:textSize="24px"/>
+    </RelativeLayout>
+    </ScrollView>
+</layout>

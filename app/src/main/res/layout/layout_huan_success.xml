@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/ll_huan_success"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70px"
+            android:src="@mipmap/repay_success"/>
+        <TextView
+            android:id="@+id/tv_huan_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color333333"
+            android:textSize="34px"
+            android:layout_marginTop="30px"
+            android:text="恭喜您！还款成功"/>
+        <Button
+            android:id="@+id/btn_loan_again"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:background="@drawable/shape_home_btn_border"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_margin="90px"
+            android:textSize="34px"
+            android:textColor="@color/colorWhite"
+            android:text="再次借款"/>
+    </LinearLayout>
+</layout>

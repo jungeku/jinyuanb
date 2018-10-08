@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/public_gb_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:background="@color/public_red">
+
+        <RelativeLayout
+            android:layout_marginTop="200px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px">
+
+            <LinearLayout
+                android:id="@+id/ll_property_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_property_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:textColor="@color/color_white"
+                    android:textSize="55px"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="净资产（元）"
+                    android:textColor="@color/color_white"
+                    android:textSize="30px"/>
+            </LinearLayout>
+             <ImageView
+                 android:id="@+id/img_property_head_rightarrow"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@mipmap/rightarrow"
+                 android:layout_alignParentRight="true"
+                 android:layout_centerInParent="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/img_property_head_rightarrow"
+                android:textSize="34px"
+                android:text="资产分析"
+                android:textColor="@color/color_white"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="20px"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的账户（3）"
+        android:textColor="@color/black"
+        android:layout_margin="20px"
+        android:textSize="40px"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="29px"
+        android:background="@drawable/shape_border">
+        <ImageView
+            android:id="@+id/img_property_pay_cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/pay_cash"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="现金"
+            android:layout_toRightOf="@+id/img_property_pay_cash"
+            android:layout_marginLeft="20px"
+            android:textColor="@color/black"
+            android:textSize="30px"/>
+        <TextView
+            android:id="@+id/txt_property_cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6,000"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:textColor="@color/black"
+            android:textSize="30px"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="29px"
+        android:background="@drawable/shape_border">
+        <ImageView
+            android:id="@+id/img_property_pay_zhifubao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/checking_pay_zhifubao"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付宝"
+            android:layout_toRightOf="@+id/img_property_pay_zhifubao"
+            android:layout_marginLeft="20px"
+            android:textColor="@color/black"
+            android:textSize="30px"/>
+        <TextView
+            android:id="@+id/txt_property_zhifubao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5,000"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:textColor="@color/black"
+            android:textSize="30px"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="29px"
+        android:background="@drawable/shape_border">
+        <ImageView
+            android:id="@+id/img_property_pay_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/pay_cash"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信"
+            android:layout_toRightOf="@+id/img_property_pay_wechat"
+            android:layout_marginLeft="20px"
+            android:textColor="@color/black"
+            android:textSize="30px"/>
+        <TextView
+            android:id="@+id/txt_property_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4,000"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:textColor="@color/black"
+            android:textSize="30px"/>
+
+    </RelativeLayout>
+</LinearLayout>
+</layout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/android_shujumohe_sdk_beta_20180518_1.2.6/android_shujumohe_sdk_beta_20180518_1.2.6.iml" filepath="$PROJECT_DIR$/android_shujumohe_sdk_beta_20180518_1.2.6/android_shujumohe_sdk_beta_20180518_1.2.6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commonlibrary/commonlibrary.iml" filepath="$PROJECT_DIR$/commonlibrary/commonlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/im7m/im7m.iml" filepath="$PROJECT_DIR$/im7m/im7m.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jyb_android.iml" filepath="$PROJECT_DIR$/jyb_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/keyboardlib/keyboardlib.iml" filepath="$PROJECT_DIR$/keyboardlib/keyboardlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/udidsafe-V4.0-2017_11_07/udidsafe-V4.0-2017_11_07.iml" filepath="$PROJECT_DIR$/udidsafe-V4.0-2017_11_07/udidsafe-V4.0-2017_11_07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xrecyclerview/xrecyclerview.iml" filepath="$PROJECT_DIR$/xrecyclerview/xrecyclerview.iml" />
+    </modules>
+  </component>
+</project>

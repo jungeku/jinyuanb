@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/public_gb_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:background="@color/public_red"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_account_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018/09"
+            android:textSize="55px"
+            android:textColor="@color/color_white"
+            android:layout_marginTop="80px"
+            android:layout_marginLeft="20px"/>
+
+        <TextView
+            android:id="@+id/txt_property_budget_money"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="40px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textColor="@color/color_white"
+            android:textSize="55px"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置预算（元）"
+            android:textColor="@color/color_white"
+            android:textSize="30px"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="10px"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20px">
+        <LinearLayout
+            android:id="@+id/ll_account_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_property_income_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textColor="@color/color_white"
+                android:textSize="55px"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本月收入（元）"
+                android:textColor="@color/color_white"
+                android:textSize="30px"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_alignParentRight="true"
+                android:id="@+id/ll_account_expand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_property_expand_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:textColor="@color/color_white"
+                    android:textSize="55px"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本月支出（元）"
+                    android:textColor="@color/color_white"
+                    android:textSize="30px"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_account_sum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="今天收入: 0.00元 支出: 1000.00元"
+        android:layout_margin="20px"/>
+
+    <com.example.xrecyclerview.XRecyclerView
+        android:id="@+id/rv_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:background="@color/color_white"
+        >
+
+    </com.example.xrecyclerview.XRecyclerView>
+</LinearLayout>
+</layout>

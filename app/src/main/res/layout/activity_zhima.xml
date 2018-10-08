@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sk.xjwd.authenhome.activity.ZhimaActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/shape_border"
+            android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="240px"
+            android:background="#ffed3d25"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/zhifuba_authen_grant"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付宝授权"
+                android:textColor="#ff666666"
+                android:layout_marginTop="5dp"
+                android:textSize="40px"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="98px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color333333"
+                android:textSize="30px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:text="支付宝账号："/>
+            <EditText
+                android:id="@+id/ed_ID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:textColorHint="@color/color999999"
+                android:textColor="@color/color333333"
+                android:layout_marginLeft="200px"
+                android:textSize="30px"
+                android:hint="请输入支付宝账号"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/public_line_color"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="98px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color333333"
+                android:textSize="30px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:text="支付宝密码："/>
+            <EditText
+                android:id="@+id/ed_pad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:textColorHint="@color/color999999"
+                android:textColor="@color/color333333"
+                android:layout_marginLeft="200px"
+                android:textSize="30px"
+                android:hint="请输入您的支付宝登录密码"
+                android:layout_alignParentBottom="true"
+                android:inputType="textPassword"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/public_line_color"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="120px"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/zhifubao_check_xieyi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/selector_radiobutton"
+                android:drawablePadding="5px"
+                android:text="已阅读同意"
+                android:textColor="@color/color666666"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/zhifubao_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="《授权服务协议》"
+                android:textColor="@color/public_orange"
+                android:textSize="28px" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_zhima_shouquan"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:background="@drawable/shape_home_btn_border"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginTop="100px"
+            android:layout_marginRight="30px"
+            android:layout_marginLeft="30px"
+            android:layout_marginBottom="30px"
+            android:textSize="34px"
+            android:textColor="@color/colorWhite"
+            android:text="提 交"/>
+
+    </LinearLayout>
+</layout>

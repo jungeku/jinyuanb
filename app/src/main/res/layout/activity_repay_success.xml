@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sk.xjwd.minehome.activity.RepaySuccessActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <!--续期还款成功-->
+        <!--<include-->
+            <!--android:id="@+id/cl_renewal_success"-->
+            <!--layout="@layout/layout_renewal_success"-->
+            <!--android:visibility="gone"/>-->
+        <!--续期还款失败-->
+        <!--<include-->
+            <!--android:id="@+id/cl_renewal_fail"-->
+            <!--layout="@layout/layout_renewal_fail"-->
+            <!--android:visibility="gone"/>-->
+        <!--还款成功-->
+        <include
+            android:id="@+id/cl_huan_success"
+            layout="@layout/layout_huan_success"
+            android:visibility="visible"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="29px"
+        android:background="@drawable/shape_border">
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/pay_cash"/>
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="现金"
+            android:layout_toRightOf="@+id/img_icon"
+            android:layout_marginLeft="20px"
+            android:textColor="@color/black"
+            android:textSize="30px"/>
+        <TextView
+            android:id="@+id/txt_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6,500"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:textColor="@color/black"
+            android:textSize="30px"/>
+
+    </RelativeLayout>
+</layout>

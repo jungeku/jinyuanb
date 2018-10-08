@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">KeyboardLib</string>
+    <string name="keyboard_title">请输入支付密码</string>
+    <string name="keyboard_forget_pwd">忘记密码？</string>
+    <string name="keyboard_zhaungshu">专属安全键盘</string>
+
+</resources>

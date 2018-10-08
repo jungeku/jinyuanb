@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <RelativeLayout
+        android:layout_margin="20dp"
+        android:id="@+id/home_loan_success_head"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:background="@mipmap/applyorhuan_bg"
+        android:padding="30px"
+        >
+         <ImageView
+             android:id="@+id/img_applyorhuan"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_margin="20dp"
+             android:src="@mipmap/success"/>
+        <TextView
+            android:layout_below="@+id/img_applyorhuan"
+            android:id="@+id/txt_applyorhuan_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20px"
+            android:text="成功还款"
+            android:textColor="#000000"
+            android:textSize="50px"/>
+
+      <!--  <TextView
+            android:id="@+id/txt_applyorhuan_title_time"
+            android:layout_below="@+id/txt_applyorhuan_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ff333333"
+            android:text="5000"
+            android:textSize="28px"/>-->
+
+        <!--<RelativeLayout
+            android:id="@+id/rl_applyorhuan_huanmoney"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/txt_applyorhuan_title_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="应还金额"
+                android:textColor="#000000"
+                android:textSize="30px"/>
+
+            <TextView
+                android:id="@+id/txt_applyorhuan_huanmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="1000元"
+                android:textColor="#000000"
+                android:textSize="30px" />
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_applyorhuan_coupon"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/rl_applyorhuan_huanmoney"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="优惠券："
+                    android:textColor="#000000"
+                    android:textSize="30px"/>
+
+                <TextView
+                    android:id="@+id/txt_applyorhuan_coupon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text="-10.00元"
+                    android:textColor="#000000"
+                    android:textSize="30px" />
+        </RelativeLayout>
+-->
+        <Button
+            android:layout_below="@+id/txt_applyorhuan_title"
+            android:id="@+id/btn_applyorhuan_sure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/shape_home_btn_border"
+            style="?android:attr/borderlessButtonStyle"
+            android:textSize="30px"
+            android:textColor="@color/color_white"
+            android:layout_marginRight="20px"
+            android:text="确定"/>
+
+    </RelativeLayout>
+
+</layout>

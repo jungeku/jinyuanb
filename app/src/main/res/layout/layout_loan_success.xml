@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/ll_loan_success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/home_loan_success_head"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:background="@mipmap/home_loaned_bg"
+            android:padding="30px"
+          >
+            <TextView
+                android:id="@+id/txt_huan_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30px"
+                android:textColor="#ffffffff"
+                android:text="5000"
+                android:textSize="72px"/>
+
+            <RelativeLayout
+                android:id="@+id/sds"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="50px"
+                android:layout_below="@+id/txt_huan_money"
+                android:layout_width="wrap_content"
+                android:layout_height="90px">
+                <TextView
+                    android:id="@+id/txt_daihuankuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="待还款金额(元)"
+                    android:textColor="#ffffffff"
+                    android:textSize="34px"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/sds"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:text="*逾期还款将会影响证信和芝麻信用"
+                android:textColor="@color/shallowWhite"
+                android:textSize="24px" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/home_loan_success_body"
+            android:layout_marginTop="350px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_border"
+            style="?android:attr/borderlessButtonStyle">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="40px"
+                android:text="还款日期"
+                android:textColor="@color/color333333"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/txt_huan_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="40px"
+                android:text="2017-07-01"
+                android:textColor="@color/color333333"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt1"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="40px"
+                android:text="借款金额"
+                android:textColor="@color/color333333"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/txt_jie_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txt_huan_time"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="40px"
+                android:text="1000元"
+                android:textColor="@color/color333333"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt2"
+                android:layout_marginBottom="20px"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="40px"
+                android:text="申请时间"
+                android:textColor="@color/color333333"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/txt_apply_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txt_jie_money"
+                android:layout_marginBottom="20px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="40px"
+                android:text="2017-06-27 12:23:21"
+                android:textColor="@color/color333333"
+                android:textSize="30px" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_below="@+id/home_loan_success_body"
+           android:layout_margin="30px"
+            android:id="@+id/ll_now_renwal"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <Button
+                android:id="@+id/btn_apply_xuqi_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_code_border"
+                style="?android:attr/borderlessButtonStyle"
+                android:textSize="30px"
+                android:textColor="@color/public_orange"
+                android:layout_marginRight="20px"
+                android:text="申请续期"/>
+            <Button
+                android:id="@+id/btn_fast_loan1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_home_btn_border"
+                style="?android:attr/borderlessButtonStyle"
+                android:textSize="30px"
+                android:textColor="@color/colorWhite"
+                android:text="我要借款"/>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

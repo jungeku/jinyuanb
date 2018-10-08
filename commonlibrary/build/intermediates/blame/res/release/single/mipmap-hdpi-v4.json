@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "D:\\project\\zhishutd-jyb_android-master\\jyb_android\\commonlibrary\\build\\intermediates\\res\\merged\\release\\mipmap-hdpi-v4\\load_err.png",
+        "source": "D:\\project\\zhishutd-jyb_android-master\\jyb_android\\commonlibrary\\src\\main\\res\\mipmap-hdpi\\load_err.png"
+    },
+    {
+        "merged": "D:\\project\\zhishutd-jyb_android-master\\jyb_android\\commonlibrary\\build\\intermediates\\res\\merged\\release\\mipmap-hdpi-v4\\seach_baise.png",
+        "source": "D:\\project\\zhishutd-jyb_android-master\\jyb_android\\commonlibrary\\src\\main\\res\\mipmap-hdpi\\seach_baise.png"
+    },
+    {
+        "merged": "D:\\project\\zhishutd-jyb_android-master\\jyb_android\\commonlibrary\\build\\intermediates\\res\\merged\\release\\mipmap-hdpi-v4\\fenlei_sousuo.png",
+        "source": "D:\\project\\zhishutd-jyb_android-master\\jyb_android\\commonlibrary\\src\\main\\res\\mipmap-hdpi\\fenlei_sousuo.png"
+    },
+    {
+        "merged": "D:\\project\\zhishutd-jyb_android-master\\jyb_android\\commonlibrary\\build\\intermediates\\res\\merged\\release\\mipmap-hdpi-v4\\fanhuijiantou.png",
+        "source": "D:\\project\\zhishutd-jyb_android-master\\jyb_android\\commonlibrary\\src\\main\\res\\mipmap-hdpi\\fanhuijiantou.png"
+    },
+    {
+        "merged": "D:\\project\\zhishutd-jyb_android-master\\jyb_android\\commonlibrary\\build\\intermediates\\res\\merged\\release\\mipmap-hdpi-v4\\fanhui.png",
+        "source": "D:\\project\\zhishutd-jyb_android-master\\jyb_android\\commonlibrary\\src\\main\\res\\mipmap-hdpi\\fanhui.png"
+    },
+    {
+        "merged": "D:\\project\\zhishutd-jyb_android-master\\jyb_android\\commonlibrary\\build\\intermediates\\res\\merged\\release\\mipmap-hdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\mayn\\.gradle\\caches\\transforms-1\\files-1.1\\multipleimageselect-1.0.4.aar\\869f1e27ab89748a1ade9c14f6e7cf94\\res\\mipmap-hdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\project\\zhishutd-jyb_android-master\\jyb_android\\commonlibrary\\build\\intermediates\\res\\merged\\release\\mipmap-hdpi-v4\\icon_back.png",
+        "source": "D:\\project\\zhishutd-jyb_android-master\\jyb_android\\commonlibrary\\src\\main\\res\\mipmap-hdpi\\icon_back.png"
+    },
+    {
+        "merged": "D:\\project\\zhishutd-jyb_android-master\\jyb_android\\commonlibrary\\build\\intermediates\\res\\merged\\release\\mipmap-hdpi-v4\\img_one_bi_one.png",
+        "source": "D:\\project\\zhishutd-jyb_android-master\\jyb_android\\commonlibrary\\src\\main\\res\\mipmap-hdpi\\img_one_bi_one.png"
+    },
+    {
+        "merged": "D:\\project\\zhishutd-jyb_android-master\\jyb_android\\commonlibrary\\build\\intermediates\\res\\merged\\release\\mipmap-hdpi-v4\\back.png",
+        "source": "D:\\project\\zhishutd-jyb_android-master\\jyb_android\\commonlibrary\\src\\main\\res\\mipmap-hdpi\\back.png"
+    }
+]

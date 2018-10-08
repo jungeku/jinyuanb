@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="com.pingxx:pingpp-ui-2.1.18">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/pingpp-ui-2.1.18.aar/4295864bfffcf2cbc7d4509d1b1eebd0/jars/libs/libpingppui-2.1.18.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/pingpp-ui-2.1.18.aar/4295864bfffcf2cbc7d4509d1b1eebd0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/pingpp-ui-2.1.18.aar/4295864bfffcf2cbc7d4509d1b1eebd0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.pingxx/pingpp-ui/2.1.18/7838836d640d10f46fb4eed3a0303608b0b8e717/pingpp-ui-2.1.18-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
