@@ -6,6 +6,7 @@ import android.view.View;
 
 import com.sk.xjwd.MyApplication;
 import com.sk.xjwd.R;
+import com.sk.xjwd.account.activity.LoginActivity;
 import com.sk.xjwd.base.BaseActivity;
 import com.sk.xjwd.databinding.ActivityUpdatePasswordBinding;
 import com.sk.xjwd.minehome.contract.UpdatePasswordContract;
@@ -65,7 +66,9 @@ public class UpdatePasswordActivity extends BaseActivity<UpdatePasswordActivityP
                     UIUtil.showToast("密码必须6-12位！");
                 }else if(!newPsw1.equals(newPs2)){
                     UIUtil.showToast("前后两次密码不一致！");
-                }else{
+                }else if(newPsw1.equals(MyApplication.getString("userPwd",""))) {
+                    UIUtil.showToast("与原密码一样");
+                }else {
                     mPresenter.postData(phone,code,newPsw1);
 //                    if(mBindingView.chXieyi.isChecked()){
 //                        mPresenter.postData(phone,code,pwd);
@@ -75,5 +78,12 @@ public class UpdatePasswordActivity extends BaseActivity<UpdatePasswordActivityP
                 }
                 break;
         }
+    }
+
+    @Override
+    public void activityfinish() {
+        UIUtil.showToast("修改成功！");
+        UIUtil.startActivity(LoginActivity.class,null);
+        this.finish();
     }
 }

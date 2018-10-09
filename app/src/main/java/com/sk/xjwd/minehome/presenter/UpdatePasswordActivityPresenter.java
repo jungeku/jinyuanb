@@ -105,8 +105,7 @@ public class UpdatePasswordActivityPresenter extends UpdatePasswordContract.Pres
                 try {
                     JSONObject object=new JSONObject(result);
                     if(object.getString("code").equals("SUCCESS")){
-                        UIUtil.showToast("修改成功！");
-                        UIUtil.startActivity(LoginActivity.class,null);
+                        mView.activityfinish();
                     }else{
                         UIUtil.showToast(object.getString("msg"));
                     }

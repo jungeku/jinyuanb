@@ -15,6 +15,7 @@ public interface UpdatePasswordContract {
 
     interface View extends BaseView {
 
+        void activityfinish();
     }
     abstract class Presenter extends BasePresenter<UpdatePasswordContract.View> {
         public abstract void getCode(TextView textView, String phone);

@@ -454,6 +454,7 @@ public class PhoneAuthActivity extends BaseActivity<PhoneAuthActivityPresenter,A
 //                            RxBus.getDefault().post(Constants.REQUESTID_1, 2);
 //                            UIUtil.startActivity(MainActivity.class,null);
                             UIUtil.startActivity(ApplyActivity.class,null);
+                            PhoneAuthActivity.this.finish();
                         }else if(codes.equals("101")){
                             // dismissDialog();
 
